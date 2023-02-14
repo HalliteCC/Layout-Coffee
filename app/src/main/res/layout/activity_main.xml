@@ -4,8 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
+
+    //capuccino
     <TextView
         android:id="@+id/text_cappuccino"
         android:layout_width="0dp"
@@ -20,6 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    //back-image
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,6 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    //new layout - add padding
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,6 +41,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_cappuccino">
 
 
+        //image - clock
         <ImageView
             android:id="@+id/image_Clock"
             android:layout_width="40dp"
@@ -47,6 +53,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        //image - heart
         <ImageView
             android:id="@+id/image_heart"
             android:layout_width="40dp"
@@ -56,6 +63,7 @@
             app:layout_constraintStart_toEndOf="@id/image_Clock"
             app:layout_constraintTop_toTopOf="@id/image_Clock" />
 
+        //text - How much it takes
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,6 +75,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/image_Clock" />
 
+        //text - likes
         <TextView
             android:id="@+id/text_time"
             android:layout_width="wrap_content"
@@ -79,6 +88,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/image_Clock" />
 
+        //bar bellow
         <View
             android:id="@+id/view_bar"
             android:layout_width="0dp"
@@ -89,6 +99,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_time" />
 
+        //text - description
         <TextView
             android:id="@+id/text_description"
             android:layout_width="wrap_content"
@@ -102,6 +113,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/view_bar" />
 
+        //text - Ingredients
         <TextView
             android:id="@+id/text_ingredients"
             android:layout_width="wrap_content"
@@ -113,6 +125,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_description" />
 
+        //image - arrow1
         <ImageView
             android:id="@+id/image_chevron1"
             android:layout_width="32dp"
@@ -121,7 +134,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_ingredients" />
 
-
+        //text - ingredient 1
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -131,6 +144,7 @@
             app:layout_constraintStart_toEndOf="@id/image_chevron1"
             app:layout_constraintTop_toTopOf="@id/image_chevron1" />
 
+        //image - arrow2
         <ImageView
             android:id="@+id/image_chevron2"
             android:layout_width="32dp"
@@ -139,7 +153,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/image_chevron1" />
 
-
+        //text - ingredient 2
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -149,6 +163,7 @@
             app:layout_constraintStart_toEndOf="@id/image_chevron2"
             app:layout_constraintTop_toTopOf="@id/image_chevron2" />
 
+        //image - arrow3
         <ImageView
             android:id="@+id/image_chevron3"
             android:layout_width="32dp"
@@ -157,7 +172,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/image_chevron2" />
 
-
+        //text - ingredient 3
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
